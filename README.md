@@ -1,2 +1,2 @@
 # cheesecake-website
-edited file
+This is a simple website the user can order cheesecakes from 
