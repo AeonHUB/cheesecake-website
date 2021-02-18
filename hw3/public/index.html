@@ -1,0 +1,95 @@
+<!--By Grant Nelson-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheesecake Order</title>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/hw1stylesheet.css" media="screen"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>  </script>
+</head>
+
+<body>
+
+  <h1>Cheesecake Order Form</h1>
+
+  <!--The code below displays the cheesecake image with an alt (which says that it's a picture of a cheesecake if the website doesn't load the image) and style sets the size-->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="it's a cheesecake" style="width:250px;height:250px;"> 
+<form>
+  <table>
+    <tr>     
+      <td id = "qua">Quantity</td>
+      <td>Topping</td>
+    </tr>
+    <tr>
+      <td>
+        <select id="qwe">
+	  <option type="qua" value="1" name="num">1</option>
+	  <option type="qua" value="2" name="num">2</option>
+	  <option type="qua" value="3" name="num">3</option>
+        </select>
+      </td>
+      <td>
+	<input type="radio" id="plain" name="type" value="plain">
+  	<label for="male">Plain</label><br>
+	
+	<input type="radio" id="cherry" name="type" value="cherry">
+ 	<label for="male">Cherry</label><br>
+	
+	<input type="radio" id="chocolate" name="type" value="chocolate">
+  	<label for="male">Chocolate</label>
+	</td>
+  </table>
+<!--for the table above , I used https://stackoverflow.com/questions/12569020/insert-multiple-rows-in-a-cell-in-html-table#12744508 to figure out how to put the radio button list alongside the drop down menu-->
+    <div class="helvitica"><label for="notes">Notes:</label></div>
+    <form>
+      <textarea id="notes" name="notes" rows="4"cols="40" placeholder="Enter any special instructions here.">
+      </textarea>
+      <br></br>
+<!--this <br> was to make the order button below the Notes box-->  
+  <button id="button" onclick="myFunction()">Order</button>
+
+   	
+      <!--<input type="submit" value="Order"> this is the value for the old button from assn 1-->
+    </form>
+   <!--https://www.w3schools.com/howto/howto_css_dropdown.asp I used this to make the dropdown-->
+    <th>
+      <div class="arial"><h3>Total Orders For 
+  <div class="dropdown" >
+ 
+  <button id="drop" class="dropbtn" value="January">January</button>
+  <div class="dropdown-content" >
+    <a href="#" name="month" id="month">January</a>
+    <a href="#" name="month" id="month">February</a>
+    <a href="#" name="month" id="month">March</a>
+    <a href="#" name="month" id="month">April</a>
+    <a href="#" name="month" id="month">May</a>
+    <a href="#" name="month" id="month">June</a>
+    <a href="#" name="month" id="month">July</a>
+    <a href="#" name="month" id="month">August</a>
+    <a href="#" name="month" id="month">September</a>
+    <a href="#" name="month" id="month">October</a>
+    <a href="#" name="month" id="month">November</a>
+    <a href="#" name="month" id="month">December</a>
+
+  </div>
+</div></h3></div>
+  
+    </th>
+    <tr>
+    <td>
+      <ul>
+        <li>11 cherry</li>
+        <li>17 chocolate</li>
+        <li>31 plain</li>
+      </ul>
+    </td>
+    </tr>
+<!--For this whole file I also used the W3 schools tutorial as well https://www.w3schools.com/html/default.asp-->
+</form>
+
+
+<script src="javascripts/monthreplace.js"></script>
+<script src="javascripts/btnpagehide.js"></script>
+  
+<!--for the radio button reading I used https://www.javascripttutorial.net/javascript-dom/javascript-radio-button/-->
+</body>
+</html>
